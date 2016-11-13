@@ -20,7 +20,8 @@ Route::get('/', function ()
     ]);
 });
 
-// Route::get('/index', 'HomeController@index');
+Route::get('cards', 'CardsController@index');
+Route::get('cards/{card}', 'CardsController@show');
 
 Route::get('/projects', function()
 {
