@@ -20,7 +20,7 @@ Route::get('/', function ()
     ]);
 });
 
-Route::get('/index', 'HomeController@index');
+// Route::get('/index', 'HomeController@index');
 
 Route::get('/projects', function()
 {
@@ -34,10 +34,15 @@ Route::get('/resume', function()
 
 Route::get('/tictactoe', function()
 {
-        
+    
 });
 
 Route::get('/contact', function()
 {
     
+});
+
+Route::get('/{param}', function($param)
+{
+    return view('errors/404', ['param' => $param]);
 });

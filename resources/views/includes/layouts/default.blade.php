@@ -1,0 +1,10 @@
+@include('includes/session')
+@include('includes/functions')
+<html>
+	@include('includes/layouts/head')
+	<body>
+		@include('includes/layouts/header')
+		@yield('content')
+		@include('includes/layouts/footer')
+	</body>
+</html>
