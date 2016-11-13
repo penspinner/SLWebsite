@@ -11,8 +11,33 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function () 
+{
+    return view('index', [
+        'name' => 'OP',
+        'active_page' => 'Home',
+        'stylesheets' => array("/css/MainStyle.css", "/css/HomePage.css")
+    ]);
 });
 
 Route::get('/index', 'HomeController@index');
+
+Route::get('/projects', function()
+{
+    
+});
+
+Route::get('/resume', function()
+{
+       
+});
+
+Route::get('/tictactoe', function()
+{
+        
+});
+
+Route::get('/contact', function()
+{
+    
+});
