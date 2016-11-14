@@ -11,39 +11,14 @@
 |
 */
 
-Route::get('/', function () 
-{
-    return view('index', [
-        'name' => 'OP',
-        'active_page' => 'Home',
-        'stylesheets' => array("/css/MainStyle.css", "/css/HomePage.css")
-    ]);
-});
-
+// Cards
 Route::get('cards', 'CardsController@index');
 Route::get('cards/{card}', 'CardsController@show');
 
-Route::get('/projects', function()
-{
-    
-});
-
-Route::get('/resume', function()
-{
-       
-});
-
-Route::get('/tictactoe', function()
-{
-    
-});
-
-Route::get('/contact', function()
-{
-    
-});
-
-Route::get('/{param}', function($param)
-{
-    return view('errors/404', ['param' => $param]);
-});
+// Pages
+Route::get('/', 'PagesController@index');
+Route::get('/projects', 'PagesController@projects');
+Route::get('/resume', 'PagesController@resume');
+Route::get('/tictactoe', 'PagesController@tictactoe');
+Route::get('/contact', 'PagesController@contact');
+Route::get('/{param}', 'PagesController@error');
