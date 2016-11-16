@@ -22,3 +22,4 @@ Route::get('/resume', 'PagesController@resume');
 Route::get('/tictactoe', 'PagesController@tictactoe');
 Route::get('/contact', 'PagesController@contact');
 Route::get('/{param}', 'PagesController@error');
+Route::post('/email', 'PagesController@email');

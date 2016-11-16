@@ -1,4 +1,4 @@
-@extends('includes/layouts/default')
+@extends('old/includes/layouts/default')
 @section('content')
 	<!-- Main content of the home page -->
 	<main id="content">
