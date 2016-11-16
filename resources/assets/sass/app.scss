@@ -2,8 +2,11 @@
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
-// Variables
+// Import partials
 @import "variables";
+@import "mixins";
+@import "base";
+@import "modules";
 
 // Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+/* @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap"; */

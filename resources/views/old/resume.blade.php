@@ -40,7 +40,7 @@
           <li>Gained experience in executing receptionist duties such as meticulously organizing paper work chronologically.</li>
         </ul>
 			</p>
-			<a class="ext_link" href="files/pdf/Resume.pdf" target="_blank"><h2>Resume (PDF)</h2></a>
+			<a class="ext_link" href="files/pdf/StevenLiao_Resume.pdf" target="_blank"><h2>Resume (PDF)</h2></a>
 			<a class="ext_link" href="resume" target="_blank"><h2>Resume (HTML)</h2></a>
 		</article>
 	</main>
