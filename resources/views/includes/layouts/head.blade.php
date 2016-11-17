@@ -13,6 +13,7 @@
 	<title><?php echo $title;?></title>
 	<link rel="icon" type="image/png" href="images/Rubiks-cube-256.png">
 	<link rel="manifest" href="old/manifest.json">
+	<link rel="stylesheet" href="css/app.css">
 	
 	@foreach($stylesheets as $stylesheet)
 		{!! "<link rel='stylesheet' type='text/css' href='" . $stylesheet . "'>" !!}

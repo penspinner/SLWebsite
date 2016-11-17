@@ -15,11 +15,14 @@
 Route::get('cards', 'CardsController@index');
 Route::get('cards/{card}', 'CardsController@show');
 
-// Pages
-Route::get('/', 'PagesController@index');
-Route::get('/projects', 'PagesController@projects');
-Route::get('/resume', 'PagesController@resume');
-Route::get('/tictactoe', 'PagesController@tictactoe');
-Route::get('/contact', 'PagesController@contact');
-Route::get('/{param}', 'PagesController@error');
-Route::post('/email', 'PagesController@email');
+// New Website Pages
+Route::get('/', 'NewPagesController@index');
+
+// Old Website Pages
+Route::get('old/', 'PagesController@index');
+Route::get('old/projects', 'PagesController@projects');
+Route::get('old/resume', 'PagesController@resume');
+Route::get('old/tictactoe', 'PagesController@tictactoe');
+Route::get('old/contact', 'PagesController@contact');
+Route::get('old/{param}', 'PagesController@error');
+Route::post('old/email', 'PagesController@email');

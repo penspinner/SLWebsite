@@ -1,0 +1,26 @@
+
+nav
+{
+	ul
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	li 
+	{
+		color: $beigeGreen;
+		padding: 5px;
+		display: inline-block;
+		&:hover
+		{ background-color: $lightGreen; }
+	}
+	
+	a
+	{
+		text-decoration: none;
+	}
+}
+
+.background-green { background-color: $darkGreen; }
