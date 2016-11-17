@@ -1,4 +1,6 @@
 <header>
-	<h1><!-- <canvas id="canvas" style="width:126px; height:50px;"></canvas> --><a href="/">Steven Liao</a></h1>
+	<a href="/">
+		<img src="" alt="Steven Liao">
+	</a>
 	{!! navigation($active_page) !!}
 </header>
