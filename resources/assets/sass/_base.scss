@@ -1,6 +1,11 @@
 
+body { font-family: $bodyFont; }
+
 nav
 {
+	float: right;
+	@include clearfix;
+	
 	ul
 	{
 		margin: 0;
@@ -13,14 +18,27 @@ nav
 		color: $beigeGreen;
 		padding: 5px;
 		display: inline-block;
-		&:hover
-		{ background-color: $lightGreen; }
+		border-radius: 14%;
+		border: 2px solid transparent;
+		
+		&:hover 
+		{ 
+			border-color: $lightGreen;
+			-webkit-transition: border-color 1.5s ease-out, color 1.5s ease-out;
+			transition: border-color 1.5s ease-out, color 1.5s ease-out;
+		}
+		
+		a
+		{
+			color: $beigeGreen;
+			&:hover 
+			{
+				text-decoration: none;
+				color: $beigeGreen;
+			}
+		}
 	}
 	
-	a
-	{
-		text-decoration: none;
-	}
 }
 
 .background-green { background-color: $darkGreen; }

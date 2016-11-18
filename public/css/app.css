@@ -5767,20 +5767,34 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
+body {
+  font-family: "Open Sans", sans-serif; }
 
-nav li {
-  color: #B4C691;
-  padding: 5px;
-  display: inline-block; }
-  nav li:hover {
-    background-color: #28DC18; }
-
-nav a {
-  text-decoration: none; }
+nav {
+  float: right; }
+  nav:after {
+    content: "";
+    display: table;
+    clear: both; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  nav li {
+    color: #B4C691;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 14%;
+    border: 2px solid transparent; }
+    nav li:hover {
+      border-color: #28DC18;
+      -webkit-transition: border-color 1.5s ease-out, color 1.5s ease-out;
+      transition: border-color 1.5s ease-out, color 1.5s ease-out; }
+    nav li a {
+      color: #B4C691; }
+      nav li a:hover {
+        text-decoration: none;
+        color: #B4C691; }
 
 .background-green {
   background-color: #053B00; }
