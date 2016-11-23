@@ -5767,37 +5767,57 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/* Overrides */
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: #B4C691; }
 
-nav {
+footer {
+  text-align: center; }
+
+pre {
+  border: none;
+  color: #B4C691; }
+
+nav#navbar {
+  margin-top: 25px;
   float: right; }
-  nav:after {
+  nav#navbar:after {
     content: "";
     display: table;
     clear: both; }
-  nav ul {
+  nav#navbar ul {
     margin: 0;
     padding: 0;
     list-style: none; }
-  nav li {
-    color: #B4C691;
-    padding: 5px;
-    display: inline-block;
-    border-radius: 14%;
-    border: 2px solid transparent; }
-    nav li:hover {
-      border-color: #28DC18;
-      -webkit-transition: border-color 1.5s ease-out, color 1.5s ease-out;
-      transition: border-color 1.5s ease-out, color 1.5s ease-out; }
-    nav li a {
-      color: #B4C691; }
-      nav li a:hover {
-        text-decoration: none;
-        color: #B4C691; }
+    nav#navbar ul li {
+      display: inline-block; }
+      nav#navbar ul li a {
+        font-size: 18px;
+        color: #B4C691;
+        padding: 5px;
+        border-radius: 14%;
+        border: 2px solid transparent;
+        text-decoration: none; }
+        nav#navbar ul li a:hover {
+          text-decoration: none;
+          color: #B4C691;
+          border-color: #28DC18;
+          -webkit-transition: border-color 1.5s ease-out, color 1.5s ease-out;
+          transition: border-color 1.5s ease-out, color 1.5s ease-out; }
+        nav#navbar ul li a.active {
+          border-color: #28DC18; }
 
-.background-green {
+.background-green, footer, pre {
   background-color: #053B00; }
+
+.background-desk {
+  background-image: url("/images/desk.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  min-height: 400px; }
 
 .logo-image {
   width: 75px; }
