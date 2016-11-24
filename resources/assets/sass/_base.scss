@@ -1,8 +1,9 @@
 
 /* Overrides */
-body { font-family: $bodyFont; color: $beigeGreen; }
+body { font-family: $bodyFont; color: $beigeGreen; font-size: $mediumFont; }
 footer { @extend .background-green; text-align: center; }
 pre { @extend .background-green; border: none; color: $beigeGreen;}
+h1, h2, h3, h4, h5 { font-family: $headFont; }
 
 nav#navbar
 {
@@ -33,8 +34,8 @@ nav#navbar
 					text-decoration: none;
 					color: $beigeGreen;
 					border-color: $lightGreen;
-					-webkit-transition: border-color 1.5s ease-out, color 1.5s ease-out;
-					transition: border-color 1.5s ease-out, color 1.5s ease-out;
+					-webkit-transition: border-color 1s ease-out, color 1.5s ease-out;
+					transition: border-color 1s ease-out, color 1.5s ease-out;
 				}
 				&.active
 				{
@@ -53,7 +54,31 @@ nav#navbar
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100vh;
-	min-height: 400px;
+	min-height: 500px;
 }
 
-
+.info { padding-top: 20vh; }
+ul.icons 
+{ 
+	list-style: none;
+	margin-top: 20px;
+	padding: 0;
+	
+	li
+	{
+		display: inline-block;
+		margin-left: 5px;
+		margin-right: 5px;
+		
+		a 
+		{ 
+			color: $beigeGreen;
+			&:hover 
+			{ 
+				color: $lightGreen;
+				-webkit-transition: color .75s ease-out;
+				transition: color .75s ease-out;
+			}
+		}
+	}
+}

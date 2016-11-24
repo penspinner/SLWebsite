@@ -12,11 +12,12 @@
  `.___.'|_____|    
 	</pre>
 	<div>
-		Steven Liao's other stuff: 
+<!-- 		Steven Liao's other stuff: 
 		<a class="ext_link" href="https://www.github.com/penspinner" target="_blank">GitHub</a> | 
 		<a class="ext_link" href="https://www.linkedin.com/in/stliao" target="_blank">LinkedIn</a> | 
 		<a class="ext_link" href="http://myanimelist.net/animelist/2ezpz2plzme" target="_blank">MyAnimeList</a> | 
-		<a class="ext_link" href="http://www.youtube.com/32309" target="_blank">YouTube</a>
+		<a class="ext_link" href="http://www.youtube.com/32309" target="_blank">YouTube</a> -->
+		&copy; Copyright Steven Liao. 2016. All rights reserved.
 	</div>
 </footer> 
 <?php
