@@ -8166,7 +8166,18 @@ ul.icons {
         -webkit-transition: color .75s ease-out;
         transition: color .75s ease-out; }
 
+.pad {
+  padding: 20px 0; }
+
+.darkgreen2 {
+  color: #01260C; }
+
 .logo-image {
   width: 75px; }
+
+.comp-image {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 4px; }
 
 /*# sourceMappingURL=app.css.map */

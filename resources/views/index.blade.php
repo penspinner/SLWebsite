@@ -23,5 +23,20 @@
 			</ul>
 		</div>
 	</section>
+	<section class="pad">
+		<div class="darkgreen2 container">
+			<div class="col-xs-12">
+				<h1 class="text-center">
+					Ay! I'm Steven, and I'm a junior developer.
+				</h1>
+			</div>
+			<div class="col-xs-6 text-center">
+				<img class="comp-image" src="/images/me_comp.jpg" alt="Computer.jpg">
+			</div>
+			<div class="col-xs-6">
+				I am very passionate about software development and web development.
+			</div>
+		</div>
+	</section>
 </main>
 @stop
