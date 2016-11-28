@@ -38,8 +38,14 @@
 					I am very passionate about software development and web development. My interest in software started since I was a little kid playing video games and surfing the web. The interest developed during my college years. I have made websites, web apps, games, and will continue to make more and explore newer technologies. 
 				</p>
 				<p>
-					
+					<strong>As a developer, I like to exceed expectations.</strong>
 				</p>
+				<div class="col-xs-4 pad text-center">
+					<a class="link-button" href="/projects">View Projects</a>
+				</div>
+				<div class="col-xs-4 pad text-center">
+					<a class="link-button" target="_blank" href="/files/pdf/StevenLiao_Resume.pdf">Resume</a>
+				</div>
 			</div>
 		</div>
 	</section>

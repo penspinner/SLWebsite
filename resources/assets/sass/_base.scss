@@ -87,3 +87,19 @@ ul.icons
 .pad { padding: 20px 0; }
 .margin { margin-top: 30px; margin-bottom: 30px; }
 .darkgreen2 { color: $darkGreen2; }
+.link-button 
+{ 
+	border: 1px solid $darkGreen2; 
+	padding: 10px; 
+	border-radius: 4px; 
+	text-decoration: none;
+	font-size: $largeFont;
+	&:hover 
+	{ 
+		text-decoration: none;
+		background-color: $darkGreen2;
+		color: $lightGreen;
+		-webkit-transition: background-color 0.5s ease-out, color 0.5s ease-out;
+		transition: background-color 0.5s ease-out, color 0.5s ease-out;
+	}
+}
