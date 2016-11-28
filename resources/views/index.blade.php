@@ -3,7 +3,7 @@
 <main>
 	<section class="background-desk">
 		<div class="info text-center container">
-			<h1>Steven Liao</h1>
+			<h1 class="margin">Steven Liao</h1>
 			<ul class="icons">
 				<li>
 					<a href="https://github.com/penspinner" target="_blank">
@@ -26,7 +26,7 @@
 	<section class="pad">
 		<div class="darkgreen2 container">
 			<div class="col-xs-12">
-				<h1 class="text-center">
+				<h1 class="margin text-center">
 					Ay! I'm Steven, and I'm a junior developer.
 				</h1>
 			</div>
@@ -34,7 +34,12 @@
 				<img class="comp-image" src="/images/me_comp.jpg" alt="Computer.jpg">
 			</div>
 			<div class="col-xs-6">
-				I am very passionate about software development and web development.
+				<p>
+					I am very passionate about software development and web development. My interest in software started since I was a little kid playing video games and surfing the web. The interest developed during my college years. I have made websites, web apps, games, and will continue to make more and explore newer technologies. 
+				</p>
+				<p>
+					
+				</p>
 			</div>
 		</div>
 	</section>

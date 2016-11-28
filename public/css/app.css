@@ -8108,6 +8108,9 @@ pre {
 h1, h2, h3, h4, h5 {
   font-family: "Patua One", sans-serif; }
 
+p {
+  line-height: 2; }
+
 nav#navbar {
   margin-top: 25px;
   float: right; }
@@ -8168,6 +8171,10 @@ ul.icons {
 
 .pad {
   padding: 20px 0; }
+
+.margin {
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
 .darkgreen2 {
   color: #01260C; }

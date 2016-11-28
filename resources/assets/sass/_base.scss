@@ -4,6 +4,7 @@ body { font-family: $bodyFont; color: $beigeGreen; font-size: $mediumFont; }
 footer { @extend .background-green; text-align: center; }
 pre { @extend .background-green; border: none; color: $beigeGreen;}
 h1, h2, h3, h4, h5 { font-family: $headFont; }
+p { line-height: 2; }
 
 nav#navbar
 {
@@ -84,4 +85,5 @@ ul.icons
 }
 
 .pad { padding: 20px 0; }
+.margin { margin-top: 30px; margin-bottom: 30px; }
 .darkgreen2 { color: $darkGreen2; }
