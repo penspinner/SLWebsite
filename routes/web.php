@@ -17,6 +17,7 @@ Route::get('cards/{card}', 'CardsController@show');
 
 // New Website Pages
 Route::get('/', 'NewPagesController@index');
+Route::get('projects', 'NewPagesController@projects');
 
 // Old Website Pages
 Route::get('old/', 'PagesController@index');

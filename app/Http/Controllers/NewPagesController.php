@@ -13,4 +13,12 @@ class NewPagesController extends Controller
       'active_page' => 'home'
     ]);
   }
+  
+  public function projects()
+  {
+    return view('projects',
+    [
+      'active_page' => 'projects'
+    ]);
+  }
 }
