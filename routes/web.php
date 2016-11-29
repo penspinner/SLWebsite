@@ -18,6 +18,8 @@ Route::get('cards/{card}', 'CardsController@show');
 // New Website Pages
 Route::get('/', 'NewPagesController@index');
 Route::get('projects', 'NewPagesController@projects');
+Route::get('contact', 'NewPagesController@contact');
+Route::post('send', 'NewPagesController@sendEmail');
 
 // Old Website Pages
 Route::get('old/', 'PagesController@index');

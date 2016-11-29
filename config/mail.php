@@ -59,6 +59,11 @@ return [
         'address' => 'Stvnliao@yahoo.com',
         'name' => 'Steven Liao',
     ],
+    
+    'to' => [
+      'address' => 'Stvnliao@yahoo.com',
+      'name' => 'Steven Liao'
+    ],
 
     /*
     |--------------------------------------------------------------------------

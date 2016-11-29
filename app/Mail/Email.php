@@ -10,15 +10,21 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 class Email extends Mailable
 {
     use Queueable, SerializesModels;
-
+    
+    /**
+     * Stores the email address, subject, message, and attachments.
+     *
+     */
+    public $emailContent;
+  
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($emailContent)
     {
-        //
+        $this->emailContent = $emailContent;
     }
 
     /**
