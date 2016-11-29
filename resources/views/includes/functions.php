@@ -2,7 +2,7 @@
 
 	function navigation($active_page = "home")
 	{
-		$pages = array("resume", "projects", "tictactoe", "contact");
+		$pages = array("resume", "projects", "contact");
 		
 		$output = "<nav id=\"navbar\" class=\"background-green\">";
 		$output .= "<ul>";
