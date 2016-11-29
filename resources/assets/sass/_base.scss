@@ -2,13 +2,14 @@
 /* Overrides */
 body { font-family: $bodyFont; color: $beigeGreen; font-size: $mediumFont; }
 footer { @extend .background-green; text-align: center; }
-pre { @extend .background-green; border: none; color: $beigeGreen;}
+pre { @extend .green; border: none;}
 h1, h2, h3, h4, h5 { font-family: $headFont; }
 p { line-height: 2; }
 
-nav#navbar
+nav.navbar
 {
 	margin-top: 25px;
+	margin-bottom: 0;
 	float: right;
 	@include clearfix;
 	
@@ -48,6 +49,8 @@ nav#navbar
 }
 
 .background-green { background-color: $darkGreen; }
+.font-green { color: $beigeGreen; }
+.green { @extend .background-green; @extend .font-green;}
 .background-desk 
 { 
 	background-image: url('/images/desk.jpg');
@@ -106,16 +109,19 @@ ul.icons
 
 .contact 
 {
+	@extend .green;
+	
 	form
 	{
-		margin-left: auto;
-		margin-right: auto;
+		margin-bottom: 0;
+		padding: 20px 0;
 		width: 75%;
 	}
 
 	fieldset
 	{
 		padding: 20px;
+		float: none;
 	}
 
 	input, textarea
@@ -125,16 +131,18 @@ ul.icons
 
 	legend
 	{
-		font-size: $largeFont;
+		@extend .font-green;
 	}
 
-	input[type="text"], input[type="email"], input[type="tel"], textarea
+	input[type="text"], input[type="email"], input[type="tel"], input[type="file"], textarea
 	{
+		background-color: $beigeGreen;
 		border: 1px solid #e5e5e5;
 		padding: 8px 10px;
 		box-sizing: border-box;
 		width: 100%;
-		margin: 0 0 20px;
+		margin: 0 0 25px;
+		color: black;
 	}
 
 	textarea
@@ -148,7 +156,7 @@ ul.icons
 	input[type="submit"]
 	{
 		float: right;
-		background-color: #28DC18;
+		background-color: $lightGreen;
 		padding: 10px 20px;
 		color: white;
 		border: none;

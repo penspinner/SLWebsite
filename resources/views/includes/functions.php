@@ -4,7 +4,7 @@
 	{
 		$pages = array("resume", "projects", "contact");
 		
-		$output = "<nav id=\"navbar\" class=\"background-green\">";
+		$output = "<nav class=\"background-green navbar\">";
 		$output .= "<ul>";
 		foreach ($pages as $page)
 		{

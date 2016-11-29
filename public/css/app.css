@@ -8102,8 +8102,7 @@ footer {
   text-align: center; }
 
 pre {
-  border: none;
-  color: #DEE7C6; }
+  border: none; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Patua One", sans-serif; }
@@ -8111,37 +8110,41 @@ h1, h2, h3, h4, h5 {
 p {
   line-height: 2; }
 
-nav#navbar {
+nav.navbar {
   margin-top: 25px;
+  margin-bottom: 0;
   float: right; }
-  nav#navbar:after {
+  nav.navbar:after {
     content: "";
     display: table;
     clear: both; }
-  nav#navbar ul {
+  nav.navbar ul {
     margin: 0;
     padding: 0;
     list-style: none; }
-    nav#navbar ul li {
+    nav.navbar ul li {
       display: inline-block; }
-      nav#navbar ul li a {
+      nav.navbar ul li a {
         font-size: 18px;
         color: #DEE7C6;
         padding: 5px;
         border-radius: 14%;
         border: 2px solid transparent;
         text-decoration: none; }
-        nav#navbar ul li a:hover {
+        nav.navbar ul li a:hover {
           text-decoration: none;
           color: #DEE7C6;
           border-color: #28DC18;
           -webkit-transition: border-color 1s ease-out, color 1.5s ease-out;
           transition: border-color 1s ease-out, color 1.5s ease-out; }
-        nav#navbar ul li a.active {
+        nav.navbar ul li a.active {
           border-color: #28DC18; }
 
-.background-green, footer, pre {
+.background-green, footer, .green, pre, .contact {
   background-color: #053B00; }
+
+.font-green, .green, pre, .contact, .contact legend {
+  color: #DEE7C6; }
 
 .background-desk {
   background-image: url("/images/desk.jpg");
@@ -8193,25 +8196,25 @@ ul.icons {
     transition: background-color 0.5s ease-out, color 0.5s ease-out; }
 
 .contact form {
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 0;
+  padding: 20px 0;
   width: 75%; }
 
 .contact fieldset {
-  padding: 20px; }
+  padding: 20px;
+  float: none; }
 
 .contact input, .contact textarea {
   font-size: 16px; }
 
-.contact legend {
-  font-size: 18px; }
-
-.contact input[type="text"], .contact input[type="email"], .contact input[type="tel"], .contact textarea {
+.contact input[type="text"], .contact input[type="email"], .contact input[type="tel"], .contact input[type="file"], .contact textarea {
+  background-color: #DEE7C6;
   border: 1px solid #e5e5e5;
   padding: 8px 10px;
   box-sizing: border-box;
   width: 100%;
-  margin: 0 0 20px; }
+  margin: 0 0 25px;
+  color: black; }
 
 .contact textarea {
   font: 100% Verdana, Helvetica, sans-serif;
