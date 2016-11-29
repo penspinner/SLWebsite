@@ -121,6 +121,7 @@ ul.icons
 	fieldset
 	{
 		padding: 20px;
+		border: 2px groove $beigeGreen;
 		float: none;
 	}
 
@@ -132,6 +133,8 @@ ul.icons
 	legend
 	{
 		@extend .font-green;
+		width: initial;
+		border-bottom: 0;
 	}
 
 	input[type="text"], input[type="email"], input[type="tel"], input[type="file"], textarea

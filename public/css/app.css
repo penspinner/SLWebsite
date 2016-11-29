@@ -8202,10 +8202,15 @@ ul.icons {
 
 .contact fieldset {
   padding: 20px;
+  border: 2px groove #DEE7C6;
   float: none; }
 
 .contact input, .contact textarea {
   font-size: 16px; }
+
+.contact legend {
+  width: initial;
+  border-bottom: 0; }
 
 .contact input[type="text"], .contact input[type="email"], .contact input[type="tel"], .contact input[type="file"], .contact textarea {
   background-color: #DEE7C6;
