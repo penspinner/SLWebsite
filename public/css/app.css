@@ -8141,7 +8141,7 @@ nav.navbar {
           border-color: #28DC18; }
 
 .background-lightBlue {
-  background-color: #4DD0CD; }
+  background-color: #4DD0E1; }
 
 .background-green, footer, .green, pre, .contact {
   background-color: #053B00; }
@@ -8249,5 +8249,11 @@ ul.icons {
   max-width: 400px;
   width: 100%;
   border-radius: 4px; }
+
+.project-image {
+  max-width: 100%;
+  border-radius: 4px;
+  margin: 20px auto;
+  border: 2px groove #053B00; }
 
 /*# sourceMappingURL=app.css.map */
