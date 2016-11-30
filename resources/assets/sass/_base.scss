@@ -48,6 +48,7 @@ nav.navbar
 	}
 }
 
+.background-lightBlue { background-color: $lightBlue; }
 .background-green { background-color: $darkGreen; }
 .font-green { color: $beigeGreen; }
 .green { @extend .background-green; @extend .font-green;}
@@ -166,4 +167,10 @@ ul.icons
 		border-radius: 4px;
 		cursor: pointer;
 	}
+}
+
+.projects
+{
+	color: $darkGreen2;
+	
 }

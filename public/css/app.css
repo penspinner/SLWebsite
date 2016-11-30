@@ -8140,6 +8140,9 @@ nav.navbar {
         nav.navbar ul li a.active {
           border-color: #28DC18; }
 
+.background-lightBlue {
+  background-color: #4DD0CD; }
+
 .background-green, footer, .green, pre, .contact {
   background-color: #053B00; }
 
@@ -8235,6 +8238,9 @@ ul.icons {
   border: none;
   border-radius: 4px;
   cursor: pointer; }
+
+.projects {
+  color: #01260C; }
 
 .logo-image {
   width: 75px; }
