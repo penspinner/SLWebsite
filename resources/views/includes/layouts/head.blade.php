@@ -8,6 +8,7 @@
 <head>
 	<meta charset="UTF-8">
 <!-- 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta name="description" content="Steven Liao is a computer science graduate from Stony Brook University.">
 	<meta name="keywords" content="Steven Liao, Stony Brook University, software engineer, web developer, software developer, New York City, NYC, resume, full stack developer, hacker, OP ">
 	<title><?php echo $title;?></title>

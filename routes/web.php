@@ -19,7 +19,7 @@ Route::get('cards/{card}', 'CardsController@show');
 Route::get('/', 'NewPagesController@index');
 Route::get('projects', 'NewPagesController@projects');
 Route::get('contact', 'NewPagesController@contact');
-Route::post('send', 'NewPagesController@sendEmail');
+Route::post('sendEmail', 'NewPagesController@sendEmail');
 
 // Old Website Pages
 Route::get('old/', 'PagesController@index');

@@ -52,17 +52,41 @@ class NewPagesController extends Controller
    */
   public function sendEmail(Request $request)
   {
-    if ($request->isMethod('post'))
-    {
-      $emailContent = new stdClass();
-      $emailContent->name = $request->name;
-      $emailContent->subject = $request->subject;
-      $emailContent->emailAddress = $request->emailAddress;
-      $emailContent->message = $request->message;
-//       $emailContent->attachments = $request->attachments;
+//     if ($request->isMethod('post'))
+//     {
+//       $emailContent = new stdClass();
+//       $emailContent->name = $request->name;
+//       $emailContent->emailAddress = $request->emailAddress;
+//       $emailContent->subject = $request->subject;
+//       $emailContent->files = $request->files;
+//       $emailContent->message = $request->message;
       
-      Mail::to('Stvnliao@yahoo.com')
-          ->queue(new Email($emailContent));
+//       Mail::to('Stvnliao@yahoo.com')
+//           ->send(new Email($emailContent));
+//     }
+//     return $request->all();
+    $field_name = $_POST['name'];
+    $field_email = $_POST['email'];
+    $field_subject = $_POST['subject'];
+    $field_message = $_POST['message'];
+
+    $mail_to = 'Stvnliao@yahoo.com';
+    if (!$field_subject)
+      $field_subject = 'Message from a site visitor '.$field_name;
+    
+    $body_message = 'From: '.$field_name."\n";
+    $body_message .= 'Email: '.$field_email."\n";
+    $body_message .= 'Subject: '.$field_subject."\n";
+    $body_message .= 'Message: '.$field_message;
+
+    $headers = 'From: '.$field_email."\r\n";
+    $headers .= 'Reply-To: '.$field_email."\r\n";
+
+    $mail_status = mail($mail_to, $field_subject, $body_message, $headers);
+    
+    if ($mail_status)
+    {
+      return redirect('/');
     }
   }
 }

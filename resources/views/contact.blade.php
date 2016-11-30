@@ -2,7 +2,8 @@
 @section('content')
 <main>
 	<section class="contact">
-		<form class="container center-block" action="sendEmail" method="post">
+		<form class="container center-block" action="/sendEmail" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="_token" value="{{ csrf_token() }}">
 			<fieldset class="col-xs-6 center-block">
 				<legend><h2>Contact Me</h2></legend>
         <p>Holler at me if you want to get in touch.</p>
