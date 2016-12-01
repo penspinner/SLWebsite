@@ -29,7 +29,8 @@ class NewPagesController extends Controller
   {
     return view('projects',
     [
-      'active_page' => 'projects'
+      'active_page' => 'projects',
+      'extscripts' => ['js/projects.js']
     ]);
   }
   

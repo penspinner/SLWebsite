@@ -8110,6 +8110,9 @@ h1, h2, h3, h4, h5 {
 p {
   line-height: 2; }
 
+input {
+  color: #01260C; }
+
 nav.navbar {
   margin-top: 25px;
   margin-bottom: 0;
@@ -8140,10 +8143,7 @@ nav.navbar {
         nav.navbar ul li a.active {
           border-color: #28DC18; }
 
-.background-lightBlue {
-  background-color: #4DD0E1; }
-
-.background-green, footer, .green, pre, .contact {
+.background-darkGreen, header, footer, .green, pre, .contact {
   background-color: #053B00; }
 
 .font-green, .green, pre, .contact, .contact legend {
@@ -8241,6 +8241,13 @@ ul.icons {
 
 .projects {
   color: #01260C; }
+  .projects .background-grayGradient {
+    background: -webkit-linear-gradient(top, #F1F1F1, #999999, #F1F1F1);
+    background: linear-gradient(to bottom, #F1F1F1, #999999, #F1F1F1); }
+  .projects .background-lightBlue {
+    background-color: #4DD0E1; }
+  .projects .background-green {
+    background-color: #19B76E; }
 
 .logo-image {
   width: 75px; }

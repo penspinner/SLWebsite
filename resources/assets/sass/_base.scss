@@ -1,10 +1,12 @@
 
 /* Overrides */
 body { font-family: $bodyFont; color: $beigeGreen; font-size: $mediumFont; }
-footer { @extend .background-green; text-align: center; }
+header, footer { @extend .background-darkGreen; }
+footer { text-align: center; }
 pre { @extend .green; border: none;}
 h1, h2, h3, h4, h5 { font-family: $headFont; }
 p { line-height: 2; }
+input { color: $darkGreen2; }
 
 nav.navbar
 {
@@ -48,10 +50,9 @@ nav.navbar
 	}
 }
 
-.background-lightBlue { background-color: $lightBlue; }
-.background-green { background-color: $darkGreen; }
+.background-darkGreen { background-color: $darkGreen; }
 .font-green { color: $beigeGreen; }
-.green { @extend .background-green; @extend .font-green;}
+.green { @extend .background-darkGreen; @extend .font-green;}
 .background-desk 
 { 
 	background-image: url('/images/desk.jpg');
@@ -172,5 +173,8 @@ ul.icons
 .projects
 {
 	color: $darkGreen2;
+	.background-grayGradient { background: linear-gradient(to bottom, #F1F1F1 , #999999, #F1F1F1); }
+	.background-lightBlue { background-color: $lightBlue; }
+	.background-green { background-color: $green; }
 	
 }
