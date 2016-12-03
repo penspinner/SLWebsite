@@ -34,6 +34,9 @@ class Email extends Mailable
      */
     public function build()
     {
-        return $this->view('email_sent');
+        return $this
+               ->from($this->emailContent->emailAddress, $this->emailContent->name)
+               ->subject($this->emailContent->subject)
+               ->view('email.template');
     }
 }

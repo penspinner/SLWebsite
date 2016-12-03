@@ -1,14 +1,18 @@
-<html>
-	<head>
-		
-	</head>
-	<body>
-		<main>
-			<h1>
-				Email Sent!
-			</h1>
-			Sender: {{ $emailContent->emailAddress }}
+@extends('includes/layouts/default')
+@section('content')
+<main class="background-darkGreen" style="height:90%;">
+	<div class="col-xs-6 col-xs-offset-3">
+		<h1>
+			Email Sent!
+		</h1>
+		<p>
+			Sender: {{ $emailContent->emailAddress }}<br>
+			Subject: {{ $emailContent->subject }}<br>
 			Message: {{ $emailContent->message }}
-		</main>
-	</body>
-</html>
+		</p>
+		<p>
+			Thanks for reaching out to me! I will respond as soon as possible. Have a great day.
+		</p>
+	</div>
+</main>
+@stop
