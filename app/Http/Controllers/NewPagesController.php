@@ -22,6 +22,18 @@ class NewPagesController extends Controller
   }
   
   /**
+   * Resume page
+   * @return void
+   */
+  public function resume()
+  {
+    return view('resume',
+    [
+      'active_page' => 'resume'
+    ]);
+  }
+  
+  /**
    * Projects page
    * @return void
    */

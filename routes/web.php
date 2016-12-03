@@ -17,6 +17,7 @@ Route::get('cards/{card}', 'CardsController@show');
 
 // New Website Pages
 Route::get('/', 'NewPagesController@index');
+Route::get('resume', 'NewPagesController@resume');
 Route::get('projects', 'NewPagesController@projects');
 Route::get('contact', 'NewPagesController@contact');
 Route::post('sendEmail', 'NewPagesController@sendEmail');
