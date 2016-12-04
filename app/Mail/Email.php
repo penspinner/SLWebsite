@@ -39,16 +39,21 @@ class Email extends Mailable
                   ->subject($this->emailContent->subject);
       
         // Attach file uploads
-        foreach ($this->emailContent->files as $file)
+        if (isset($this->emailContent->files))
         {
-            $name = $file->getClientOriginalName();
-            $mimeType = $file->getClientMimeType();
-            $filePath = $file->getPathName();
-            $email->attach($filePath, 
-            [
-//               'as' => $name,
-//               'mime' => $mimeType
-            ]);
+          foreach ($this->emailContent->files as $file)
+          {
+//               $name = explode('.', $file->getClientOriginalName())[0];
+              $name = $file->getClientOriginalName();
+              $mimeType = $file->getClientMimeType();
+//               $file = $file->move('./', $name);
+              $filePath = $file->getPathName();
+              $email->attach($filePath, 
+              [
+                'as' => $name,
+                'mime' => $mimeType
+              ]);
+          }
         }
         
         // Give blade template to email
