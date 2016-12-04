@@ -34,9 +34,26 @@ class Email extends Mailable
      */
     public function build()
     {
-        return $this
-               ->from($this->emailContent->emailAddress, $this->emailContent->name)
-               ->subject($this->emailContent->subject)
-               ->view('email.template');
+        $email = $this
+                  ->from($this->emailContent->emailAddress, $this->emailContent->name)
+                  ->subject($this->emailContent->subject);
+      
+        // Attach file uploads
+        foreach ($this->emailContent->files as $file)
+        {
+            $name = $file->getClientOriginalName();
+            $mimeType = $file->getClientMimeType();
+            $filePath = $file->getPathName();
+            $email->attach($filePath, 
+            [
+//               'as' => $name,
+//               'mime' => $mimeType
+            ]);
+        }
+        
+        // Give blade template to email
+        $email->view('email.template');
+        
+        return $email;
     }
 }

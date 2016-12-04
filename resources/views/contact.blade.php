@@ -10,7 +10,7 @@
 				<input type="text" name="name" placeholder="Name" required autofocus>
 				<input type="email" name="emailAddress" placeholder="Email" required>
 				<input type="text" name="subject" placeholder="Subject" required>
-				<input type="file" name="files">
+				<input type="file" name="files[]" multiple>
 				<textarea name="message" placeholder="Message" required></textarea>
 				<input type="submit" value="Send">
 			</fieldset>

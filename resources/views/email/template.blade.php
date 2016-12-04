@@ -6,9 +6,12 @@
 	</head>
 	<body>
 		<main>
-			<p>
-				{{ $emailContent->message }}
-			</p>
+			<section>
+				<p>
+					{{ $emailContent->message }}
+				</p>
+				
+			</section>
 		</main>
 	</body>
 </html>

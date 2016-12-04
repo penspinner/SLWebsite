@@ -1,5 +1,5 @@
 <?php
-	if (!isset($title)) 			$title = "OP";
+	if (!isset($title)) 			$title = "Steven Liao";
 	if (!isset($stylesheets)) $stylesheets = array();
 	if (!isset($extscripts))	$extscripts = array();
 	if (!isset($extras))			$extras = "";

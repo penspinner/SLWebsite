@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Storage;
 use App\Mail\Email;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -29,7 +30,8 @@ class NewPagesController extends Controller
   {
     return view('resume',
     [
-      'active_page' => 'resume'
+      'active_page' => 'resume',
+      'title' => 'Steven Liao Resume'
     ]);
   }
   
@@ -42,6 +44,7 @@ class NewPagesController extends Controller
     return view('projects',
     [
       'active_page' => 'projects',
+      'title' => 'Steven Liao Projects',
       'extscripts' => ['js/projects.js']
     ]);
   }
@@ -54,7 +57,8 @@ class NewPagesController extends Controller
   {
     return view('contact',
     [
-      'active_page' => 'contact'
+      'active_page' => 'contact',
+      'title' => 'Contact Me'
     ]);
   }
   
@@ -71,7 +75,7 @@ class NewPagesController extends Controller
       $emailContent->name = $request->name;
       $emailContent->emailAddress = $request->emailAddress;
       $emailContent->subject = $request->subject;
-      $emailContent->files = $request->files;
+      $emailContent->files = $request->file('files');
       $emailContent->message = $request->message;
       
       if ($request->emailAddress && $request->name)
@@ -79,6 +83,7 @@ class NewPagesController extends Controller
         Mail::to('Stvnliao@yahoo.com')
             ->send(new Email($emailContent));
       }
+      
       return view('email_sent',
       [
         'active_page' => 'email_sent',
