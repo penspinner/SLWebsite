@@ -11,7 +11,7 @@ $(document).ready(function()
 		// For each project, compare the title with the input value
 		projects.each(function(i, e)
 		{
-			var title = $(e).find('.title').text();
+			var title = $(e).find('.title').text() + $(e).find('.tech').text();
 			if (title.search(new RegExp(value, 'i')) > -1)
 			{
 				e.style.display = '';

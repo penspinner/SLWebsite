@@ -173,8 +173,9 @@ ul.icons
 .projects
 {
 	color: $darkGreen2;
+	.background-blueGradient { background: linear-gradient(to bottom right, #95DAE7, #89B4CA, #437C9E); }
 	.background-grayGradient { background: linear-gradient(to bottom, #F1F1F1 , #999999, #F1F1F1); }
 	.background-lightBlue { background-color: $lightBlue; }
 	.background-green { background-color: $green; }
-	
+	a { @extend .darkgreen2; }
 }
