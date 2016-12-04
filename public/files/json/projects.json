@@ -1,0 +1,29 @@
+[
+	{
+		"bg"		: "background-grayGradient",
+		"title"	: "Quarterhorse Technology",
+		"role"	: "Website Developer/Designer",
+		"url"		: "http://stevenliao.tech/~108607000/final",
+		"src"		: "images/projects/QTI.png",
+		"alt"		: "QTI",
+		"desc"	: "Redesigned Quarterhorse Technology Inc's website to be more viewport-responsive and mobile adaptive with HTML, CSS, and JavaScript."
+	},
+	{
+		"bg"		: "background-lightBlue",
+		"title"	: "Digital Conceptions",
+		"role"	: "Lead Programmer",
+		"url"		: "http://digital-conceptions-6.appspot.com",
+		"src"		: "images/projects/DigitalConceptions.png",
+		"alt"		: "Digital Conceptions",
+		"desc"	: "Have you ever wanted to read comics AND have the ability to create comics online? Well, here you go. Digital Conceptions allows the public to read and create comics for the world to see. I created this project with a team of 3 others in school. We used HTML, CSS, JavaScript, Java Server Pages, Java, Google App Engine, and Materialize framework."
+	},
+	{
+		"bg"		: "background-green",
+		"title"	: "Steven Stocks",
+		"role"	: "Developer",
+		"url"		: "http://stevenliao.tech:8080/stevenstocks",
+		"src"		: "images/projects/StevenStocks.png",
+		"alt"		: "Steven Stocks",
+		"desc"	: "This web application is designed to simulate a stock-trading system. The frontend is built with Java Server Pages and JavaScript, while the backend is built with Java, JDBC, and MySQL. With our simple interface, clients may easily navigate through this app to buy stocks, sell stocks, keep track of orders and stock price fluctuations."
+	}
+]

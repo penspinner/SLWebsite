@@ -41,10 +41,15 @@ class NewPagesController extends Controller
    */
   public function projects()
   {
+    $projectsContents = file_get_contents('files/json/projects.json');
+//     var_dump($projectsContents);
+    $projects = json_decode($projectsContents);
+//     var_dump($projects);
     return view('projects',
     [
       'active_page' => 'projects',
       'title' => 'Steven Liao Projects',
+      'projects' => $projects,
       'extscripts' => ['js/projects.js']
     ]);
   }

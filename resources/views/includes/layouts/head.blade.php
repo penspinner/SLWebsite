@@ -11,7 +11,7 @@
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta name="description" content="Steven Liao is a computer science graduate from Stony Brook University.">
 	<meta name="keywords" content="Steven Liao, Stony Brook University, software engineer, web developer, software developer, New York City, NYC, resume, full stack developer, hacker, OP ">
-	<title><?php echo $title;?></title>
+	<title>{{ $title }}</title>
 	<link rel="icon" type="image/png" href="images/Rubiks-cube-256.png">
 	<link rel="manifest" href="old/manifest.json">
 	<link rel="stylesheet" href="css/app.css">
