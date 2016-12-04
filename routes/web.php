@@ -23,10 +23,10 @@ Route::get('contact', 'NewPagesController@contact');
 Route::post('sendEmail', 'NewPagesController@sendEmail');
 
 // Old Website Pages
-Route::get('old/', 'PagesController@index');
-Route::get('old/projects', 'PagesController@projects');
-Route::get('old/resume', 'PagesController@resume');
-Route::get('old/tictactoe', 'PagesController@tictactoe');
-Route::get('old/contact', 'PagesController@contact');
-Route::get('old/{param}', 'PagesController@error');
-Route::post('old/email', 'PagesController@email');
+Route::get('oldsite', 'PagesController@index');
+Route::get('oldsite/projects', 'PagesController@projects');
+Route::get('oldsite/resume', 'PagesController@resume');
+Route::get('oldsite/tictactoe', 'PagesController@tictactoe');
+Route::get('oldsite/contact', 'PagesController@contact');
+Route::get('oldsite/{param}', 'PagesController@error');
+Route::post('oldsite/email', 'PagesController@email');

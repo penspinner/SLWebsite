@@ -1,10 +1,10 @@
-@include('includes/session')
-@include('includes/functions')
+@include('old/includes/session')
+@include('old/includes/functions')
 <html>
-	@include('includes/layouts/head')
+	@include('old/includes/layouts/head')
 	<body>
-		@include('includes/layouts/header')
+		@include('old/includes/layouts/header')
 		@yield('content')
-		@include('includes/layouts/footer')
+		@include('old/includes/layouts/footer')
 	</body>
 </html>

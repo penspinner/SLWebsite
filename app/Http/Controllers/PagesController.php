@@ -14,7 +14,7 @@ class PagesController extends Controller
         [
             'name' => 'OP',
             'active_page' => 'home',
-            'stylesheets' => array("old/css/MainStyle.css", "old/css/HomePage.css")
+            'stylesheets' => array("/old/css/MainStyle.css", "/old/css/HomePage.css")
         ]);
     }
     
@@ -24,7 +24,7 @@ class PagesController extends Controller
         [
             'name' => 'Steven Liao Projects',
             'active_page' => 'projects',
-            'stylesheets' => array("old/css/MainStyle.css", "old/css/ProjectsStyle.css")
+            'stylesheets' => array("/old/css/MainStyle.css", "/old/css/ProjectsStyle.css")
         ]);
     }
     
@@ -34,7 +34,7 @@ class PagesController extends Controller
         [
             'name' => 'Steven Liao Resume',
             'active_page' => 'resume',
-            'stylesheets' => array("old/css/MainStyle.css", "old/css/ResumeStyle.css")
+            'stylesheets' => array("/old/css/MainStyle.css", "/old/css/ResumeStyle.css")
         ]);
     }
     
@@ -44,7 +44,7 @@ class PagesController extends Controller
         [
             'name' => 'OP tic tac toe',
             'active_page' => 'tictactoe',
-            'stylesheets' => array("old/css/MainStyle.css", "old/css/TicTacToeStyle.css")
+            'stylesheets' => array("/old/css/MainStyle.css", "/old/css/TicTacToeStyle.css")
         ]);
     }
     
@@ -54,7 +54,7 @@ class PagesController extends Controller
         [
             'name' => 'Contact Me',
             'active_page' => 'contact',
-            'stylesheets' => array("old/css/MainStyle.css", "old/css/ContactMeStyle.css")
+            'stylesheets' => array("/old/css/MainStyle.css", "/old/css/ContactMeStyle.css")
         ]);
     }
   
