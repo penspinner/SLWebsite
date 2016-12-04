@@ -2,3 +2,9 @@
 .logo-image { width: 75px; }
 .comp-image { max-width: 400px; width: 100%; border-radius: 4px; }
 .project-image { max-width: 100%; border-radius: 4px; margin: 20px auto; border: 2px groove $darkGreen; }
+.fa-heart { color: red; animation: heartbeat 1s infinite; }
+
+@keyframes heartbeat
+{
+  50% { transform: scale(1.2); }
+}

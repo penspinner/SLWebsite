@@ -18,7 +18,8 @@
 		<a class="ext_link" href="http://myanimelist.net/animelist/2ezpz2plzme" target="_blank">MyAnimeList</a> | 
 		<a class="ext_link" href="http://www.youtube.com/32309" target="_blank">YouTube</a> -->
 		@include('includes/components/icons')
-		&copy; Copyright Steven Liao. 2016. All rights reserved.
+<!-- 		&copy; Copyright Steven Liao. 2016. All rights reserved. -->
+		Made with <i class="fa fa-heart"></i> by Steven.
 	</div>
 </footer> 
 <?php

@@ -1,6 +1,7 @@
 /node_modules
 /public/storage
 /public/~108607000
+/public/MatchEngine
 /vendor
 /.idea
 Homestead.json
