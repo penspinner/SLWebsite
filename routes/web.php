@@ -12,8 +12,8 @@
 */
 
 // Cards
-Route::get('cards', 'CardsController@index');
-Route::get('cards/{card}', 'CardsController@show');
+Route::get('notes', 'NotesController@index');
+Route::get('notes/{note}', 'NotesController@show');
 
 // New Website Pages
 Route::get('/', 'NewPagesController@index');

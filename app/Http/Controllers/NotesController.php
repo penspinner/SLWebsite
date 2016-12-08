@@ -6,7 +6,7 @@ use DB;
 use App\Note;
 use Illuminate\Http\Request;
 
-class CardsController extends Controller
+class NotesController extends Controller
 {
     public function index()
     {

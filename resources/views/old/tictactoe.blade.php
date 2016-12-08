@@ -1,6 +1,6 @@
 @extends('old/includes/layouts/default')
 @section('content')
-	<script src="old/js/TicTacToe.js"></script>
+	<script src="../old/js/TicTacToe.js"></script>
 	<!-- Main content of the resume page -->
 	<main id="content">
 		<canvas id="canvas" width="300" height="300"></canvas>

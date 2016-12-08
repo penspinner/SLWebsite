@@ -14,7 +14,7 @@
 			if ($page == "home")
 				$output .= "href=\"/\">";
 			else 
-				$output .= "href=\"/{$page}\">";
+				$output .= "href=\"/oldsite/{$page}\">";
 			$output .= ucwords($page);
 			$output .= "</a></li>";
 		}
