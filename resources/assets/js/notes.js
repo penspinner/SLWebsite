@@ -8,5 +8,4 @@ $('#noteForm').on('submit', function()
 {
 	this.preventDefault();
 	
-
 });

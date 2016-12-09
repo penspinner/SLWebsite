@@ -177,11 +177,12 @@ ul.icons
 	{
 		border: 10px solid $silver;
 		padding: 5%;
-		background: linear-gradient(to right, black, $chalkGray 50%, black)
+		background: linear-gradient(to right, black, $chalkGray 50%, black);
+		position: relative;
 	}
 	.sticky-note
 	{
-		background-color: $darkGreen2;
+		background-color: $darkGreen;
 		margin: 8px;
 		min-height: 100px;
 /* 		overflow-x: scroll; */
@@ -190,10 +191,8 @@ ul.icons
 	{
 		position: absolute;
 		background-color: $beigeGreen;
-		height: 5px;
-		width: 25px;
 		border-radius: 2px;
-/* 		bottom: 15px; */
+		bottom: 0px;
 	}
 }
 .display {display: block !important;}

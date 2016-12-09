@@ -21,4 +21,18 @@ class NotesController extends Controller
     {
         return view('notes.show', compact('note'));
     }
+  
+    public function postNote(Request $request)
+    {
+      if ($request->isMethod('post'))
+      {
+        $note = new Note;
+        $note->name = $request->input('name', 'Anonymous');
+        $note->content = $request->input('content', 'Left no note... :|');
+        if ($note->save())
+        {
+          return back();
+        }
+      }
+    }
 }

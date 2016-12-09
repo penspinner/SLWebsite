@@ -8246,10 +8246,11 @@ ul.icons {
   border: 10px solid #C0C0C0;
   padding: 5%;
   background: -webkit-linear-gradient(left, black, #515156 50%, black);
-  background: linear-gradient(to right, black, #515156 50%, black); }
+  background: linear-gradient(to right, black, #515156 50%, black);
+  position: relative; }
 
 .notes .sticky-note {
-  background-color: #01260C;
+  background-color: #053B00;
   margin: 8px;
   min-height: 100px;
   /* 		overflow-x: scroll; */ }
@@ -8257,10 +8258,8 @@ ul.icons {
 .notes .chalk {
   position: absolute;
   background-color: #DEE7C6;
-  height: 5px;
-  width: 25px;
   border-radius: 2px;
-  /* 		bottom: 15px; */ }
+  bottom: 0px; }
 
 .display {
   display: block !important; }

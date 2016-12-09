@@ -14,6 +14,7 @@
 // Cards
 Route::get('notes', 'NotesController@index');
 Route::get('notes/{note}', 'NotesController@show');
+Route::post('postNote', 'NotesController@postNote');
 
 // New Website Pages
 Route::get('/', 'NewPagesController@index');
