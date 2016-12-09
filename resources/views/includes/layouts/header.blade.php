@@ -1,3 +1,4 @@
+<?php if (!isset($active_page)) $active_page = ""; ?>
 <header class="background-darkGreen">
 	<div class="container">
 		<a href="/">
