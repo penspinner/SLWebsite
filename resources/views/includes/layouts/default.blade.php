@@ -6,5 +6,6 @@
 		@include('includes/layouts/header')
 		@yield('content')
 		@include('includes/layouts/footer')
+		@include('includes/analytics')
 	</body>
 </html>

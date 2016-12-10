@@ -19,7 +19,7 @@
 		<a class="ext_link" href="http://www.youtube.com/32309" target="_blank">YouTube</a> -->
 		@include('includes/components/icons')
 <!-- 		&copy; Copyright Steven Liao. 2016. All rights reserved. -->
-		Made with <i class="fa fa-heart"></i> by Steven.<br>
+		Made with <i class="fa fa-heart"></i> <i class="fa fa-tint"></i> <i class="fa fa-cutlery"></i> by Steven.<br>
 		<a href="oldsite">V1</a>
 	</div>
 </footer> 

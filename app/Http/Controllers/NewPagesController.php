@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Storage;
+use App\Note;
 use App\Mail\Email;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -16,9 +17,11 @@ class NewPagesController extends Controller
    */
   public function index()
   {
+    $note = Note::all();
     return view('index',
     [
-      'active_page' => 'home'
+      'active_page' => 'home',
+      'notes' => $note
     ]);
   }
   

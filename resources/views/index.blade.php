@@ -33,5 +33,10 @@
 			</div>
 		</div>
 	</section>
+	<section class="notes pad">
+		<a href="notes">
+			@include('notes.blackboard')
+		</a>
+	</section>
 </main>
 @stop

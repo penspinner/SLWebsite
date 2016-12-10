@@ -172,6 +172,7 @@ ul.icons
 
 .notes
 {
+	a[href=notes] { text-decoration: none; color: inherit; }
 	.noteForm { display: none; }
 	.blackboard
 	{
