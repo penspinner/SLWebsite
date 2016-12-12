@@ -7,7 +7,7 @@
 
 <head>
 	<meta charset="UTF-8">
-<!-- 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta name="description" content="Steven Liao is a computer science graduate from Stony Brook University.">
 	<meta name="keywords" content="Steven Liao, Stony Brook University, software engineer, web developer, software developer, New York City, NYC, resume, full stack developer, hacker, OP ">
@@ -33,6 +33,14 @@
 	@foreach($extscripts as $extscript)
 		{!! "<script src='" . $extscript . "'></script>" !!}
 	@endforeach
+	
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({
+			google_ad_client: "ca-pub-5765018854343553",
+			enable_page_level_ads: true
+		});
+	</script>
 	
 	{!! $extras !!}
 </head>

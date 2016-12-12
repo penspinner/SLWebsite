@@ -1,7 +1,7 @@
 @extends('includes/layouts/default')
 @section('content')
 <main class="background-darkGreen" style="height:90%;">
-	<div class="col-xs-6 col-xs-offset-3">
+	<div class="col-sm-6 col-sm-offset-3">
 		<h1>
 			Email Sent!
 		</h1>

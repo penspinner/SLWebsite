@@ -4,7 +4,7 @@
 	<section class="notes">
 		<form class="container center-block" action="postNote" method="post">
 			{{ csrf_field() }}
-			<fieldset class="col-xs-6 center-block">
+			<fieldset class="col-sm-6 center-block">
 				<legend><h2>Stick a note on my blackboard</h2></legend>
 				<label for="name">Name</label>
 				<input type="text" name="name" required>

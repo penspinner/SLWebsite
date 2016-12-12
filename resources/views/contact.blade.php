@@ -4,7 +4,7 @@
 	<section class="contact">
 		<form class="container center-block" action="sendEmail" method="post" enctype="multipart/form-data">
 			{{ csrf_field() }}
-			<fieldset class="col-xs-6 center-block">
+			<fieldset class="col-sm-6 center-block">
 				<legend><h2>Contact Me</h2></legend>
         <p>Holler at me if you want to get in touch.</p>
 				<input type="text" name="name" placeholder="Name" required autofocus>

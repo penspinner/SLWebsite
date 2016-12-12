@@ -4,7 +4,7 @@
 	<section class="background-darkGreen">
 		<div class="text-center container">
 			<h1 class="margin">A Glimpse of My Projects</h1>
-			<div class="col-xs-4 col-xs-offset-4 form-group">
+			<div class="col-sm-4 col-sm-offset-4 form-group">
 				<label>Filter Projects</label>
 				<input id="filterProjects" class="form-control" type="search" autofocus>
 			</div>
@@ -24,12 +24,12 @@
 				<a href="{{ $project->url }}" target="_blank">
 					<img class="project-image" src="{{ $project->src }}" alt="{{ $project->alt }}">
 				</a>
-				<div class="col-xs-6 margin">
+				<div class="col-sm-6 margin">
 					<p class="desc">
 						{{ $project->desc }}
 					</p>
 				</div>
-				<div class="col-xs-6 margin">
+				<div class="col-sm-6 margin">
 					<h4>
 						Technologies Used
 					</h4>
