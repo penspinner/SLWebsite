@@ -1,5 +1,7 @@
 #Remaking my website in the Laravel PHP framework
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Penspinner/SLWebsite.svg)](https://greenkeeper.io/)
+
 [My website](http://stevenliao.tech)
 
 I decided to remake my website with a different layout and explore newer technologies.
